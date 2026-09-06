@@ -568,9 +568,9 @@ export default function Page() {
       ===================================================== */}
 
       <section className="relative mx-auto max-w-360 px-3 sm:px-5 md:px-10 lg:px-16">
-        <div className="relative min-h-[570px] overflow-visible rounded-[1.5rem] bg-primary sm:min-h-[620px] sm:rounded-[2rem] md:min-h-[650px]">
+        <div className="relative min-h-142.5 overflow-visible rounded-xl bg-primary sm:min-h-155 sm:rounded-3xl md:min-h-162.5">
           {/* HERO IMAGE */}
-          <div className="absolute inset-0 overflow-hidden rounded-[1.5rem] sm:rounded-[2rem]">
+          <div className="absolute inset-0 overflow-hidden rounded-xl sm:rounded-3xl">
             <img
               src={images.hero}
               alt="Beautiful real estate property"
@@ -586,7 +586,7 @@ export default function Page() {
           </div>
 
           {/* HERO CONTENT */}
-          <div className="relative flex min-h-[570px] max-w-2xl flex-col justify-end gap-5 p-6 pb-36 sm:min-h-[620px] sm:gap-7 sm:p-8 sm:pb-40 md:min-h-[650px] md:p-14 md:pb-44">
+          <div className="relative flex min-h-142.5 max-w-2xl flex-col justify-end gap-5 p-6 pb-36 sm:min-h-155 sm:gap-7 sm:p-8 sm:pb-40 md:min-h-162.5 md:p-14 md:pb-44">
             <p className="text-[10px] uppercase tracking-[0.2em] text-primary-foreground/75 sm:text-xs sm:tracking-[0.28em] md:text-sm">
               Curated homes. Considered living.
             </p>
@@ -899,7 +899,7 @@ export default function Page() {
             onClick={(e) => e.stopPropagation()}
           >
             {/* DETAIL IMAGE */}
-            <div className="relative aspect-[4/3] overflow-hidden sm:aspect-video">
+            <div className="relative aspect-4/3 overflow-hidden sm:aspect-video">
               <img
                 src={active.photos[detailPhoto]}
                 alt={`${active.title}, gallery image ${
